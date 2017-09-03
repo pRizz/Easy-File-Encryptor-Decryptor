@@ -1,6 +1,6 @@
 /**
  * Created by Peter Ryszkiewicz on 8/10/2017.
- * https://github.com/pRizz/iota-seed-encryptor-decryptor
+ * https://github.com/pRizz/Easy-File-Encryptor-Decryptor
  */
 
 var $dataToEncrypt
@@ -42,7 +42,7 @@ function encryptData() {
         const currentDateString = new Date().toISOString()
         const downloadLink = $('<a></a>', {
             href: generatedEncryptedFile,
-            download: `iotaSeeds-${currentDateString}.pgp`
+            download: `encrypted-${currentDateString}.pgp`
         }).appendTo('body')
         downloadLink[0].click()
         downloadLink.remove()
@@ -80,7 +80,7 @@ function encryptFileData() {
             const currentDateString = new Date().toISOString()
             const downloadLink = $('<a></a>', {
                 href: generatedEncryptedFile,
-                download: `iotaSeeds-${currentDateString}.pgp`
+                download: `encrypted-${currentDateString}.pgp`
             }).appendTo('body')
             downloadLink[0].click()
             downloadLink.remove()
@@ -121,7 +121,7 @@ function decryptFileData(action) {
                 const currentDateString = new Date().toISOString()
                 const downloadLink = $('<a></a>', {
                     href: generatedDecryptedFile,
-                    download: `iotaSeeds-${currentDateString}.txt`
+                    download: `decrypted-${currentDateString}.txt`
                 }).appendTo('body')
                 downloadLink[0].click()
                 downloadLink.remove()
