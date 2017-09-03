@@ -11,6 +11,18 @@ This webapp does not store or transmit your data. But to be safe, in case of mal
 * Encrypt and Decrypt
 * Quit your browser
 
+# Benefits of Using this Webapp
+## Simple
+### No knowledge of encrypting, decrypting, or the terminal is needed
+## Easy to Use
+### No need to download external clients or interact with package managers
+## Platform Independent
+### Works anywhere in any web browser
+## Offline Usage
+### This webapp does not need internet to work
+## Secure
+### Uses the PGP standard which has gone through decades of improvements and testing
+
 # How does this work?
 Easy File Encryptor/Decryptor utilizes symmetric encryption from the [PGP protocol](https://en.wikipedia.org/wiki/Pretty_Good_Privacy). Your password acts as the symmetric key during the encryption and decryption process.
 
