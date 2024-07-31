@@ -144,16 +144,30 @@ $(function(){
     $fileToEncryptForm = $("#fileToEncryptForm")
     $fileToEncryptPassword = $("#fileToEncryptPassword")
 
+    // On drag and drop file, set the fileToEncrypt.
     $fileToEncryptForm.on('drop', function(e) {
         const droppedFiles = e.originalEvent.dataTransfer.files
         fileToEncrypt = droppedFiles[0]
     })
 
+    // On file selection, set the fileToEncrypt.
+    $fileToEncryptForm.on('change', function(e) {
+        const selectedFile = e.target.files[0];
+        fileToEncrypt = selectedFile;
+    });
+
     $fileToDecryptForm = $("#fileToDecryptForm")
     $fileToDecryptPassword = $("#fileToDecryptPassword")
 
+    // On drag and drop file, set the fileToDecrypt.
     $fileToDecryptForm.on('drop', function(e) {
         const droppedFiles = e.originalEvent.dataTransfer.files
         fileToDecrypt = droppedFiles[0]
     })
+
+    // On file selection, set the fileToDecrypt.
+    $fileToDecryptForm.on('change', function(e) {
+        const selectedFile = e.target.files[0];
+        fileToDecrypt = selectedFile;
+    });
 })
